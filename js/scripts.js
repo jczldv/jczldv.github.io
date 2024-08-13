@@ -30,5 +30,20 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    
+    // Agregar evento para mostrar/ocultar abstract
+    const toggleButtons = document.querySelectorAll('.toggle-abstract');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetDiv = document.getElementById(targetId);
+            if (targetDiv.style.display === 'none') {
+                targetDiv.style.display = 'block';
+            } else {
+                targetDiv.style.display = 'none';
+            }
+        });
+    });
 
 });
