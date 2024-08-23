@@ -10,6 +10,31 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .horizontal-image {
+  width: 100%;
+  height: 200px!important;/* Mantiene la proporción de la imagen */
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border-radius: 5px; /* Opcional: Bordes redondeados */
+}
+.side-image {
+  max-width: 200px !important; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 200px !important;
+  margin-top: 0 !important; /* Asegura que la imagen no se mueva hacia abajo */
+}
+
+.image-container {
+  flex-shrink: 0; /* Evita que la imagen se redimensione si el texto es largo */
+  margin-left: 20px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; /* Espacio arriba de la imagen */
+}
+
+.text-container {
+  flex: 1; /* Permite que el contenedor del texto ocupe el espacio disponible */
+}
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
