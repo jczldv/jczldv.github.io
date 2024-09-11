@@ -10982,13 +10982,46 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+section.work-in-progress {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 75rem;
+  min-height: auto; /* Para que no ocupe toda la ventana */
+}
+
+section.work-in-progress .resume-section-content {
+  width: 100%;
+}
+
+/* Ajustes responsivos si es necesario */
+@media (min-width: 768px) {
+  section.work-in-progress {
+    min-height: auto; /* Mantener la altura ajustada al contenido */
+  }
+}
+
+@media (min-width: 992px) {
+  section.work-in-progress {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1rem;
