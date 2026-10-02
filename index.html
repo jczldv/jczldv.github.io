@@ -1,201 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Juan Cruz Lopez Del Valle, PhD student in Economics at Boston University. Specializing in macroeconomics and political economy." />
-        <meta name="keywords" content="Juan Cruz, Lopez Del Valle , Economics, Boston, Argentina, Econ">
-        <meta name="author" content="Pablo Maestu" />
-        <meta name="google-site-verification" content="JFaK9YOD4S76TUM_SRdIuK0XM86FIv1Flmreg71GsKI" />
-        <title>Juan Cruz Lopez Del Valle</title>
-        <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:200,300,500,700" rel="stylesheet" type="text/css" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Juan Cruz Lopez Del Valle — PhD student in Economics at Boston University. Macroeconomics and political economy.">
+<title>Juan Cruz Lopez Del Valle</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127902;</text></svg>">
+</head>
+<body>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #22272f;
+    --dim: #6b7280;
+    --navy: #24466e;
+    --steel: #4a6b96;
+    --rule: #e2e5e9;
+    --card: #ffffff;
+    --frame: #d6dae0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f141c; --ink: #e6e9ee; --dim: #98a1ad; --navy: #8fb3dc;
+      --steel: #6d92be; --rule: #222a36; --card: #141b26; --frame: #2a3442;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f141c; --ink: #e6e9ee; --dim: #98a1ad; --navy: #8fb3dc;
+    --steel: #6d92be; --rule: #222a36; --card: #141b26; --frame: #2a3442;
+  }
+  :root[data-theme="light"] {
+    --bg: #ffffff; --ink: #22272f; --dim: #6b7280; --navy: #24466e;
+    --steel: #4a6b96; --rule: #e2e5e9; --card: #ffffff; --frame: #d6dae0;
+  }
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg); color: var(--ink);
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+    font-size: 17px; line-height: 1.6;
+  }
+  .page { max-width: 920px; margin: 0 auto; padding: 32px 24px 100px; }
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">JUAN CRUZ LOPEZ DEL VALLE</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/fotoperfil.jpeg" alt="imagen de Juan Cruz" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#workingpapers">Working Papers</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#workinprogress">Work in Progress</a></li>
+  /* ---------- hero: photo on top, prominent ---------- */
+  .hero { text-align: center; margin-bottom: 24px; }
+  .hero img {
+    width: 190px; height: 190px; border-radius: 50%; object-fit: cover;
+    border: 3px solid var(--navy); padding: 4px; background: var(--bg);
+    margin-bottom: 26px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 4.5vw, 38px); font-weight: 500;
+    margin: 0 0 20px; letter-spacing: 0.01em; text-wrap: balance;
+  }
+  .hero nav { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; }
+  .hero nav a {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--navy); text-decoration: none; padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .hero nav a:hover { border-bottom-color: var(--navy); }
 
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Juan Cruz
-                        <span class="text-primary">Lopez Del Valle</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        270 Bay State Rd  · Boston, MA 02215 · 
-                        <a href="mailto:jclopezdelvalle@gmail.com">jczldv@bu.edu</a>
-                    </div>
-                    <p class="lead mb-5" style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 300;">
-                      I am third-year PhD student at Boston University.<br>
-                      I am mostly interested in macroeconomics and political economy.
-                  </p>
-                  
-                        <div class="social-icons">
-                        <a class="social-icon" href="https://jczldv.github.io/assets/pdf/lopezdelvalle_cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=xnALh_0AAAAJ&hl=es" target="_blank"><i class="fab fa-google"></i></a>
-                        <a class="social-icon" href="https://x.com/jczldv" target="_blank" ><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publications-->
-            <section class="resume-section" id="publications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
-                    
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                          <h3 class="mb-0"><a href="https://jczldv.github.io/assets/pdf/journal.pgph.0000816.pdf" target="_blank">Risk factors for COVID-19 in-hospital mortality in Argentina: A competing risk survival analysis</a>
-                          </h3>
-                          <div class="subheading mb-0"> with Sebastian Calónico and Rafael Di Tella </div>
-                          <i>PLOS Global Public Health</i>. January 2024. <br>
+  .intro {
+    color: var(--dim); max-width: 62ch; margin: 36px auto 0; text-align: center;
+  }
+  .intro a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .intro a:hover { border-bottom-color: var(--navy); }
 
-                                   <!-- Sección para la imagen -->
-                                   <div class="resume-image mb-3">
-                                    <img src="assets/img/elpadrino.png" alt="Descripción de la imagen" class="img-fluid horizontal-image">
-                                </div>
-                           <p style="margin:0;"> </p><div class="topnav"> <a href="javascript:void();"class="toggle-abstract" data-target="abstract2"> [Show/hide abstract]</a> · 
-                            <a href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0000816" target="_blank"> [Published version]</a>
-                           </div>
-                          <p>
-                          </p>
-                          <p> </p>
-                        <div id="abstract2" style="display: none;"> 
-                            <div style="text-align: justify">COVID-19 poses dire threats for low and middle-income countries (LMICs). Yet, there remains limited rigorous evidence describing the characteristics and outcomes of hospitalized patients for LMICs, and often the evidence was based on small samples and/or unicentric. The objective of this study was to examine risk factors of COVID-19 mortality in Argentina, a hard-hit middle-income Latin American country. We analyze data on 5,146 COVID-19 patients from 11 centers across 10 cities in Argentina, making this one of the largest multi-centric retrospective observational descriptive studies in the LMICs. Information on demographics and co-morbidities was extracted from medical records. Outcomes of relevance consisted of whether the patient was discharged or deceased (as established in medical records), along with date of each event. We use survival models that account for competing risks. Median age was 60 years (IQR: 48–72), there were fewer women (40.8%) hospitalized than men (59.2%), and the most prevalent comorbidities were hypertension (40.9%), diabetes (20.0%) and obesity (19.1%). Patients were hospitalized for a median duration of 8 days (IQR: 5–13), and in-hospital mortality was 18.1%, though it varied substantially across health centers (95%CI: 17.1%-19.2%). Baseline characteristics most associated with in-hospital mortality were respiratory rate (adjusted HR = 3.6, 95%CI: 2.5–5.4 for ≥ 26 breathes/min), older age (adjusted HR = 2.5, 95%CI: 2.0–3.3 for the 80+ age group), and chronic kidney disease (adjusted HR = 2.2, 95%CI: 1.8–2.8). Associations were attenuated when survival models did not account for the competing risk of being discharged. We document lower mortality rates than those in prior studies, likely due to a lower prevalence of comorbidities amongst patients in our sample. Compared with standard Cox models, we find that, when using competing risk models, risk factors have a larger role in explaining COVID-19 mortality. Overall, we provide rigorous evidence describing the characteristics and outcomes of hospitalized patients for LMICs. Thus, our findings are useful to conduct a more accurate in-hospital monitoring of patient subgroups who may be at greater risk. They also provide valuable guidance for public health and policy efforts in Argentina and other developing countries.</div></div><p></p>
-                        </div>
-                      </div>  
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                          <h3 class="mb-0"><a href="https://jczldv.github.io/assets/pdf/ceq111.pdf" target="_blank">Fiscal Policy, Income Redistribution and Poverty Reduction in Argentina</a></h3>
-                          <div class="subheading mb-0"> with Caterina Brest López, Joaquín Campabadal, Julieta Ladronis, Nora Lustig, Valentina Martínez Pabón and Mariano Tommasi </div>
-                           <i>Commitment To Equity Handbook Volume 2, </i>2022, North-Holland, pp. 862-899.<br>
-                     <!-- Sección para la imagen -->
-                        <div class="resume-image mb-3">
-                            <img src="assets/img/fp1.png" alt="The big short scene" class="img-fluid horizontal-image">
-                        </div>
-                           <p style="margin:0;"> </p><div class="topnav"> <a href="javascript:void();"class="toggle-abstract" data-target="abstract1"> [Show/hide abstract]</a> · 
-                            <a href="https://commitmentoequity.org/wp-content/uploads/2023/04/CEQ-Handbook-Volume-2-.pdf" target="_blank"> [Published version]</a>
-                           </div>
-                          <p>
-                          </p>
-                          <p> </p>
-                        <div id="abstract1" style="display: none;"> 
-                            <div style="text-align: justify">We implement a fiscal incidence analysis for Argentina with data from the 2017 national household survey. We find that Argentina’s fiscal system reduces inequality and poverty more than it is the case in many other comparable countries. This result is driven more by the size of the state (as measured by social spending to GDP) than by the progressivity of the fiscal system. While there are spending items that are quite progressive and even pro-poor, taxes are unequalizing and a number of subsidies benefit disproportionately the rich.</div></div><p></p>
-                        </div>
-                      </div>      
-                      
+  /* ---------- social icon buttons ---------- */
+  .social {
+    display: flex; justify-content: center; gap: 24px;
+    margin: 28px 0 0; padding-bottom: 44px; border-bottom: 1px solid var(--rule);
+  }
+  .social a {
+    width: 54px; height: 54px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--navy); color: var(--bg);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .social a:hover { background: var(--steel); transform: translateY(-3px); }
+  .social a:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+  .social svg { width: 26px; height: 26px; fill: currentColor; }
 
-                </section>
-                <hr class="m-0">
-                <!-- Working Papers-->
-                <section class="resume-section" id="workingpapers">
-                    <div class="resume-section-content">
-                      <h2 class="mb-5">Working Papers</h2>
+  /* ---------- section headers: running head + chip ---------- */
+  .sect {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--rule); padding-bottom: 10px;
+    margin: 64px 0 30px;
+  }
+  .sect h2 {
+    font-family: Cambria, 'Sitka Text', Charter, 'Bitstream Charter', Georgia, serif;
+    font-size: 18px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--navy); margin: 0;
+  }
+  .sect .sub {
+    font-family: Cambria, 'Sitka Text', Charter, 'Bitstream Charter', Georgia, serif;
+    font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--navy); border: 1px solid var(--frame); border-radius: 999px;
+    padding: 4px 13px; margin: 0;
+  }
 
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                          <h3 class="mb-0"><a href="https://jczldv.github.io/assets/pdf/w31781.pdf" target="_blank">The Political Economy of a “Miracle Cure”: The Case of Nebulized Ibuprofen and its Diffusion in Argentina</a></h3>
-                          <div class="subheading mb-0"> with Sebastian Calónico and Rafael Di Tella </div>
-                           <i>Last version:</i> October 2023.  <br>
-                        <!-- Sección para la imagen -->
-                           <div class="resume-image mb-3">
-                            <img src="assets/img/Miracle cure.jpeg" alt="pelicula relacionada al paper" class="img-fluid horizontal-image">
-                        </div>
-                        
-                           <p style="margin:0;"> </p><div class="topnav"> <a href="javascript:void();"class="toggle-abstract" data-target="abstract3"> [Show/hide abstract]</a> · 
-                            <a href="https://www.nber.org/papers/w31781" target="_blank">[NBER Working Paper]</a>
-                           </div>
-                          <p>
-                          </p>
-                          <p> </p>
-                        <div id="abstract3" style="display: none;"> 
-                            <div style="text-align: justify">We document the diffusion of nebulized ibuprofen in Argentina as a treatment for COVID-19. As the pandemic spread, this clinically unsupported drug reached thousands of patients, even some seriously ill, despite warnings by the regulator and medical societies. Detailed daily data on deliveries for all towns in one of the largest provinces suggests a role for “rational” forces in the adoption of a miracle cure: towns adopt it when neighbors that adopt it are successful in containing deaths (a learning effect), even after controlling for the average adoption of peers. Results from a survey are consistent with learning. They also reveal a large role of beliefs: subjects that are classified as “Right” are more likely adopt and to learn, while those that are “Skeptical” report an increase in their demand when primed with the regulator’s ban.</div></div><p></p>
-                        </div>
-                      </div>
-                 
-                                  
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                          <h3 class="mb-0"><a href="https://jczldv.github.io/assets/pdf/w30084.pdf" target="_blank">Causal Inference During a Pandemic: Evidence on the Effectiveness of Nebulized Ibuprofen as an Unproven Treatment for COVID-19 in Argentina</a></h3>
-                          <div class="subheading mb-0"> with Sebastian Calónico and Rafael Di Tella </div>
-                           <i>Last version: </i> May 2022. <br>
-                                                   <!-- Sección para la imagen -->
-                           <div class="resume-image mb-3">
-                            <img src="assets/img/magnolia.png" alt="Descripción de la imagen" class="img-fluid horizontal-image">
-                        </div>
-                           <p style="margin:0;"> </p><div class="topnav"> <a href="javascript:void();"class="toggle-abstract" data-target="abstract4"> [Show/hide abstract]</a> · 
-                            <a href="https://www.nber.org/papers/w30084" target="_blank">[NBER Working Paper]</a>
-                           </div>
-                          <p>
-                          </p>
-                          <p> </p>
-                        <div id="abstract4" style="display: none;"> 
-                            <div style="text-align: justify">Many medical decisions during the pandemic were made without the support of causal evidence obtained in clinical trials. We study the case of nebulized ibuprofen (NaIHS), a drug that was extensively used on COVID-19 patients in Argentina amidst wild claims about its effectiveness and without regulatory approval. We study data on 5,146 patients hospitalized in 11 health centers spread over 4 provinces, of which a total of 1,019 (19.8%) received the treatment. We find a large, negative and statistically significant correlation between NaIHS treatment and mortality using inverse probability weighting estimators. We consider several threats to identification, including the selection of “low” risks into NaIHS, spillovers affecting patients in the control group, and differences in the quality of care in centers that use NaIHS. While the negative correlation appears to be, broadly, robust, our results are best interpreted as emphasizing the benefits of running a randomized controlled trial and the challenges of incorporating information produced in other, less rigorous circumstances.</div></div><p></p>
-                        </div>
-                      </div>
+  /* ---------- lobby-card grid ---------- */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .card {
+    position: relative;
+    background: var(--card); border: 1px solid var(--rule);
+    display: flex; flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px); border-color: var(--steel);
+    box-shadow: 0 6px 22px rgba(36, 70, 110, 0.10);
+  }
+  .card .still { overflow: hidden; }
+  .card .still img {
+    display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+    filter: saturate(0.9); transition: filter 0.25s ease, transform 0.45s ease;
+  }
+  .card:hover .still img { filter: none; }
+  .card.open .still img { transform: scale(1.05); filter: saturate(0.6); }
 
-                </div>
-                </section>
-                <!-- Work in Progress-->
-                <hr class="m-0">
-                <section class="work-in-progress" id="workinprogress">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Work in Progress</h2>
-                    
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                          <h3 style="color: #0d3d56; text-decoration: underline;">Motivated Political Memory</h3>
+  /* abstract overlay — covers the full card like a title card */
+  .card .abstract {
+    position: absolute; inset: 0;
+    z-index: 2;
+    background: rgba(9, 14, 21, 0.96);
+    color: #e9ecf1;
+    padding: 22px 26px; overflow-y: auto;
+    opacity: 0; visibility: hidden; transform: translateY(14px);
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+    cursor: pointer;
+  }
+  .card.open .abstract { opacity: 1; visibility: visible; transform: none; }
+  .card .abstract .label {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: #9db8d8; margin: 0 0 8px;
+  }
+  .card .abstract p { margin: 0 0 10px; font-size: 13.5px; line-height: 1.55; }
+  .card .abstract p:last-child { margin-bottom: 0; }
+  .card .abstract .x {
+    position: absolute; top: 8px; right: 12px;
+    background: none; border: 0; color: #9db8d8; font-size: 18px; line-height: 1;
+    cursor: pointer; padding: 4px;
+  }
+  .card .abstract .x:hover { color: #e9ecf1; }
+  .card .abstract::-webkit-scrollbar { width: 6px; }
+  .card .abstract::-webkit-scrollbar-thumb { background: #3a4a5f; border-radius: 3px; }
+  .card .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+  .card .venue {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--navy); margin: 0;
+  }
+  .card .t { font-size: 20px; line-height: 1.35; margin: 0; font-weight: 550; }
+  .card .t a { color: var(--ink); text-decoration: none; }
+  .card .t a:hover { color: var(--navy); }
+  .card .byline {
+    font-family: Cambria, 'Sitka Text', Charter, 'Bitstream Charter', Georgia, serif;
+    font-style: italic; font-size: 14px; color: var(--dim); margin: 0; line-height: 1.45;
+  }
+  .card .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 10px; }
+  .card .links a, .card .links button {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--navy); text-decoration: none; background: none; cursor: pointer;
+    border: 1px solid var(--frame); padding: 4px 12px; border-radius: 2px;
+  }
+  .card .links a:hover, .card .links button:hover { border-color: var(--navy); }
+  .card .links button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+  .card.open .links button.abs-toggle { background: var(--navy); color: var(--bg); border-color: var(--navy); }
 
-                          <div class="subheading mb-0">  </div>
-                            </div>
-                      </div>  
+  /* WIP cards */
+  .card.soon .poster {
+    aspect-ratio: 16 / 9; display: grid; place-items: center;
+    border-bottom: 1px solid var(--rule);
+    background:
+      repeating-linear-gradient(-45deg, transparent, transparent 14px,
+        rgba(107, 114, 128, 0.06) 14px, rgba(107, 114, 128, 0.06) 28px);
+  }
+  .card.soon .poster span {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--dim);
+  }
 
-                      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                        <div class="resume-content mr-auto">
-                            <h3 style="color: #0d3d56; text-decoration: underline;">Heterogeneous Agents In Developed and Developing Countries</h3>
+  /* ---------- rolling credits ---------- */
+  .credits-screen {
+    position: relative;
+    background: #0a0d14;
+    border: 1px solid var(--rule);
+    height: 430px;
+  }
+  .credits-viewport {
+    height: 100%; overflow-y: auto; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
+  }
+  .credits-viewport::-webkit-scrollbar { display: none; }
+  .credits-roll { text-align: center; padding: 40px 20px; }
+  .credits-roll .credit-role {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 11px; letter-spacing: 0.34em; text-transform: uppercase;
+    color: #8fa3bd; margin: 44px 0 18px;
+  }
+  .credits-roll .credit-role:first-child { margin-top: 0; }
+  .credits-roll .credit-name {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+    font-size: 17.5px; color: #ece9e2; margin: 0 0 10px;
+  }
+  .credits-roll .credit-fin {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 13px; letter-spacing: 0.4em; text-transform: uppercase;
+    color: #8fa3bd; margin: 56px 0 8px;
+  }
+  .credits-hint {
+    position: absolute; right: 12px; bottom: 10px; z-index: 2;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', sans-serif;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: #5c6a7d; pointer-events: none;
+  }
 
-                          <div class="subheading mb-0">  </div>
-                            </div>
-                      </div>        
+  footer {
+    margin-top: 84px; padding-top: 26px; border-top: 1px solid var(--rule);
+    text-align: center; font-size: 13.5px; color: var(--dim);
+  }
+  footer a { color: var(--navy); text-decoration: none; }
 
-                    
-                </section>
+  @media (max-width: 700px) {
+    .page { padding: 24px 16px 80px; }
+    .hero img { width: 150px; height: 150px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .card:hover { transform: none; }
+  }
+</style>
+
+<div class="page">
+  <header class="hero">
+    <img src="assets/img/perfil.jpg" alt="Juan Cruz Lopez Del Valle">
+    <h1>Juan Cruz Lopez Del Valle</h1>
+    <nav>
+      <a href="#publications">Publications</a>
+      <a href="#working-papers">Working Papers</a>
+      <a href="#work-in-progress">Work in Progress</a>
+      <a href="#heroes-villains">Heroes &amp; Villains</a>
+    </nav>
+  </header>
+
+  <p class="intro">I am a PhD student in Economics at Boston University, interested in macroeconomics
+  and political economy. You can reach me at
+  <a href="mailto:jczldv@bu.edu">jczldv@bu.edu</a>.</p>
+
+  <div class="social">
+    <a href="assets/pdf/lopezdelvalle_cv.pdf" aria-label="Curriculum vitae" title="CV" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+    </a>
+    <a href="https://scholar.google.com/citations?user=xnALh_0AAAAJ&amp;hl=es" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+    </a>
+    <a href="https://x.com/jczldv" aria-label="X / Twitter" title="X / Twitter" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
+    </a>
+    <a href="https://letterboxd.com/jcldv/" aria-label="Letterboxd" title="Letterboxd" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.4" cy="12" r="4.1"/><circle cx="12" cy="12" r="4.1"/><circle cx="18.6" cy="12" r="4.1"/></svg>
+    </a>
+  </div>
+
+  <div class="sect" id="publications">
+    <h2>Publications</h2>
+    <p class="sub">Video Store</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/elpadrino.jpg" alt="Still from The Godfather">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>COVID-19 poses dire threats for low and middle-income countries (LMICs). Yet, there
+          remains limited rigorous evidence describing the characteristics and outcomes of
+          hospitalized patients for LMICs, and often the evidence was based on small samples and/or
+          unicentric. The objective of this study was to examine risk factors of COVID-19 mortality
+          in Argentina, a hard-hit middle-income Latin American country. We analyze data on 5,146
+          COVID-19 patients from 11 centers across 10 cities in Argentina, making this one of the
+          largest multi-centric retrospective observational descriptive studies in the LMICs.
+          Information on demographics and co-morbidities was extracted from medical records.
+          Outcomes of relevance consisted of whether the patient was discharged or deceased (as
+          established in medical records), along with date of each event. We use survival models
+          that account for competing risks.</p>
+          <p>Median age was 60 years (IQR: 48&ndash;72), there were fewer women (40.8%) hospitalized
+          than men (59.2%), and the most prevalent comorbidities were hypertension (40.9%), diabetes
+          (20.0%) and obesity (19.1%). Patients were hospitalized for a median duration of 8 days
+          (IQR: 5&ndash;13), and in-hospital mortality was 18.1%, though it varied substantially
+          across health centers (95%CI: 17.1%&ndash;19.2%). Baseline characteristics most associated
+          with in-hospital mortality were respiratory rate (adjusted HR = 3.6, 95%CI: 2.5&ndash;5.4
+          for &ge; 26 breathes/min), older age (adjusted HR = 2.5, 95%CI: 2.0&ndash;3.3 for the 80+
+          age group), and chronic kidney disease (adjusted HR = 2.2, 95%CI: 1.8&ndash;2.8).
+          Associations were attenuated when survival models did not account for the competing risk
+          of being discharged.</p>
+          <p>We document lower mortality rates than those in prior studies, likely due to a lower
+          prevalence of comorbidities amongst patients in our sample. Compared with standard Cox
+          models, we find that, when using competing risk models, risk factors have a larger role in
+          explaining COVID-19 mortality. Overall, we provide rigorous evidence describing the
+          characteristics and outcomes of hospitalized patients for LMICs. Thus, our findings are
+          useful to conduct a more accurate in-hospital monitoring of patient subgroups who may be
+          at greater risk. They also provide valuable guidance for public health and policy efforts
+          in Argentina and other developing countries.</p>
         </div>
+      </div>
+      <div class="body">
+        <p class="venue">PLOS Global Public Health · 2024</p>
+        <p class="t"><a href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0000816" target="_blank" rel="noopener">Risk factors for COVID-19 in-hospital mortality in Argentina</a></p>
+        <p class="byline">With Calónico and Di Tella</p>
+        <div class="links">
+          <a href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0000816" target="_blank" rel="noopener">Published</a>
+          <a href="assets/pdf/journal.pgph.0000816.pdf" target="_blank" rel="noopener">PDF</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/bigshort.jpg" alt="Still from The Florida Project: Halley asks for bus passes">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>We implement a fiscal incidence analysis for Argentina with data from the 2017 national
+          household survey. We find that Argentina&rsquo;s fiscal system reduces inequality and
+          poverty more than it is the case in many other comparable countries. This result is driven
+          more by the size of the state (as measured by social spending to GDP) than by the
+          progressivity of the fiscal system. While there are spending items that are quite
+          progressive and even pro-poor, taxes are unequalizing and a number of subsidies benefit
+          disproportionately the rich.</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="venue">CEQ Handbook, Vol. 2 · 2022</p>
+        <p class="t"><a href="https://commitmentoequity.org/wp-content/uploads/2023/04/CEQ-Handbook-Volume-2-.pdf" target="_blank" rel="noopener">Fiscal Policy, Income Redistribution and Poverty Reduction in Argentina</a></p>
+        <p class="byline">With Brest López, Campabadal, Ladronis, Lustig, Martínez Pabón, and Tommasi</p>
+        <div class="links">
+          <a href="https://commitmentoequity.org/wp-content/uploads/2023/04/CEQ-Handbook-Volume-2-.pdf" target="_blank" rel="noopener">Published</a>
+          <a href="assets/pdf/ceq111.pdf" target="_blank" rel="noopener">PDF</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="sect" id="working-papers">
+    <h2>Working Papers</h2>
+    <p class="sub">Now Showing</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/floridaproject.jpg" alt="Still from The Florida Project">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>I study whether an economy&rsquo;s response to aggregate shocks depends on its level of
+          development. Empirically, I estimate responses to high-frequency monetary shocks at the
+          macro and micro level and compute hand-to-mouth shares for high, middle and low income
+          countries. An inverted U-shaped relationship between these two is found. Theoretically, I
+          show that matching this relationship requires a heterogeneous agent model with one key
+          feature: countercyclical inequality and income risk. This generates amplifying income
+          effects by shifting towards constrained households the additional aggregate demand
+          generated by unconstrained households&rsquo; substitution effects. Amplification peaks with
+          heterogeneity, when there is an equal share of households on and off their Euler
+          equations. These results have implications for aggregate demand stabilization policies and
+          the welfare costs of business cycles.</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="venue">2026</p>
+        <p class="t"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6251240" target="_blank" rel="noopener">Heterogeneous Agents in Developed and Developing Countries</a></p>
+        <div class="links">
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6251240" target="_blank" rel="noopener">SSRN</a>
+          <a href="assets/pdf/world-hank-jczldv.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="assets/slides/world-hank/index.html" target="_blank" rel="noopener">Slides</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/deadwood.jpg" alt="Still from Deadwood: Mr. Wu shouts 'Wu! America!'">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>We study the role of foreign ideas in U.S. innovation by constructing a directed
+          &ldquo;genealogy&rdquo; of technologies from the full text of 13 million patents filed
+          between 1894 and 2024. By tracing which earlier technologies appear in the founding patents
+          of new ones, we recover a large-scale input&ndash;output network of technological
+          recombination that identifies the foreign technologies that serve as inputs into innovation
+          in the United States. We report four main findings. First, foreign ideas are pervasive: 56%
+          of U.S. technologies build on at least one foreign input, and the most fertile U.S.
+          technologies rely on foreign inputs most heavily. Second, foreign ideas have large causal
+          effects on U.S. innovation. Using the historical settlement of migrants as a source of
+          exogenous variation in local ancestry, we show that U.S. counties more exposed to knowledge
+          from a given foreign country absorb substantially more technologies from that country and,
+          in turn, invent significantly more U.S. technologies building on them.</p>
+          <p>Third, foreign ideas shape not only the level but also the direction of technical change:
+          U.S. counties are far more likely to invent the specific technologies whose foreign inputs
+          are already in their local idea stock, and the changing origins of foreign ideas accompany
+          the shift of American innovation from its historical heartland toward the coasts and the
+          Sunbelt. Fourth, these effects leave a lasting imprint on local labor markets: decades
+          later, counties that absorbed more of an origin&rsquo;s ideas host more jobs working with
+          those ideas, and more still working with the U.S. technologies descended from them.</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="venue">2026</p>
+        <p class="t"><a href="assets/pdf/foreign_giants.pdf" target="_blank" rel="noopener">Foreign Giants&rsquo; Broad Shoulders: The Causal Effect of Foreign Ideas on U.S. Innovation</a></p>
+        <p class="byline">With Hassan and Kalyani</p>
+        <div class="links">
+          <a href="assets/pdf/foreign_giants.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="assets/pdf/foreign_giants_slides.pdf" target="_blank" rel="noopener">Slides</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/miraclecure.jpg" alt="Black-and-white still: an apothecary tells a boy 'I tell you, it's poison.'">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>We document the diffusion of nebulized ibuprofen in Argentina as a treatment for
+          COVID-19. As the pandemic spread, this clinically unsupported drug reached thousands of
+          patients, even some seriously ill, despite warnings by the regulator and medical
+          societies. Detailed daily data on deliveries for all towns in one of the largest provinces
+          suggests a role for &ldquo;rational&rdquo; forces in the adoption of a miracle cure: towns
+          adopt it when neighbors that adopt it are successful in containing deaths (a learning
+          effect), even after controlling for the average adoption of peers.</p>
+          <p>Results from a survey are consistent with learning. They also reveal a large role of
+          beliefs: subjects that are classified as &ldquo;Right&rdquo; are more likely adopt and to
+          learn, while those that are &ldquo;Skeptical&rdquo; report an increase in their demand
+          when primed with the regulator&rsquo;s ban.</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="venue">2023</p>
+        <p class="t"><a href="https://www.nber.org/papers/w31781" target="_blank" rel="noopener">The Political Economy of a &ldquo;Miracle Cure&rdquo;</a></p>
+        <p class="byline">With Calónico and Di Tella</p>
+        <div class="links">
+          <a href="https://www.nber.org/papers/w31781" target="_blank" rel="noopener">NBER</a>
+          <a href="assets/pdf/w31781.pdf" target="_blank" rel="noopener">PDF</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="still">
+        <img src="assets/img/magnolia.jpg" alt="Still from Magnolia">
+        <div class="abstract" role="region" aria-label="Abstract">
+          <p class="label">Abstract</p>
+          <p>Many medical decisions during the pandemic were made without the support of causal
+          evidence obtained in clinical trials. We study the case of nebulized ibuprofen (NaIHS), a
+          drug that was extensively used on COVID-19 patients in Argentina amidst wild claims about
+          its effectiveness and without regulatory approval. We study data on 5,146 patients
+          hospitalized in 11 health centers spread over 4 provinces, of which a total of 1,019
+          (19.8%) received the treatment. We find a large, negative and statistically significant
+          correlation between NaIHS treatment and mortality using inverse probability weighting
+          estimators.</p>
+          <p>We consider several threats to identification, including the selection of
+          &ldquo;low&rdquo; risks into NaIHS, spillovers affecting patients in the control group,
+          and differences in the quality of care in centers that use NaIHS. While the negative
+          correlation appears to be, broadly, robust, our results are best interpreted as
+          emphasizing the benefits of running a randomized controlled trial and the challenges of
+          incorporating information produced in other, less rigorous circumstances.</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="venue">2022</p>
+        <p class="t"><a href="https://www.nber.org/papers/w30084" target="_blank" rel="noopener">Causal Inference During a Pandemic</a></p>
+        <p class="byline">With Calónico and Di Tella</p>
+        <div class="links">
+          <a href="https://www.nber.org/papers/w30084" target="_blank" rel="noopener">NBER</a>
+          <a href="assets/pdf/w30084.pdf" target="_blank" rel="noopener">PDF</a>
+          <button class="abs-toggle" aria-expanded="false">Abstract</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <footer class="text-center py-3">
-            <p>&copy; 2024 Juan Cruz Lopez Del Valle. All rights reserved.</p>
-        </footer>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+  <div class="sect" id="work-in-progress">
+    <h2>Work in Progress</h2>
+    <p class="sub">Coming Soon</p>
+  </div>
+  <div class="grid">
+    <div class="card soon">
+      <div class="poster"><span>Coming Soon</span></div>
+      <div class="body">
+        <p class="t">Motivated Political Memory</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sect" id="heroes-villains">
+    <h2>Heroes &amp; Villains</h2>
+    <p class="sub">Cast</p>
+  </div>
+  <div class="credits-screen">
+    <div class="credits-viewport" id="creditsViewport" tabindex="0" aria-label="Heroes and villains, rolling credits">
+      <div class="credits-roll" id="creditsRoll">
+        <p class="credit-role">Heroes</p>
+        <p class="credit-name">Brian Wilson</p>
+        <p class="credit-name">Armen Alchian</p>
+        <p class="credit-name">Paul Thomas Anderson</p>
+        <p class="credit-name">Fiona Apple</p>
+        <p class="credit-name">Gary Becker</p>
+        <p class="credit-name">Kathryn Bigelow</p>
+        <p class="credit-name">Jorge Luis Borges</p>
+        <p class="credit-name">Jon Brion</p>
+        <p class="credit-name">David Byrne</p>
+        <p class="credit-name">Andrés Calamaro</p>
+        <p class="credit-name">Ronald Coase</p>
+        <p class="credit-name">Jarvis Cocker</p>
+        <p class="credit-name">Nick Drake</p>
+        <p class="credit-name">Bob Dylan</p>
+        <p class="credit-name">Brian Eno</p>
+        <p class="credit-name">Nathan Fielder</p>
+        <p class="credit-name">John Ford</p>
+        <p class="credit-name">Charly García</p>
+        <p class="credit-name">Donald Glover</p>
+        <p class="credit-name">Albert O. Hirschman</p>
+        <p class="credit-name">Mark Kozelek</p>
+        <p class="credit-name">John Linnell</p>
+        <p class="credit-name">John Flansburgh</p>
+        <p class="credit-name">David Lynch</p>
+        <p class="credit-name">Aimee Mann</p>
+        <p class="credit-name">Paddy McAloon</p>
+        <p class="credit-name">Paul McCartney</p>
+        <p class="credit-name">David Milch</p>
+        <p class="credit-name">Diego Milito</p>
+        <p class="credit-name">Douglass North</p>
+        <p class="credit-name">Julio H. Olivera</p>
+        <p class="credit-name">Mancur Olson</p>
+        <p class="credit-name">Elinor Ostrom</p>
+        <p class="credit-name">Van Dyke Parks</p>
+        <p class="credit-name">Nina Persson</p>
+        <p class="credit-name">Astor Piazzolla</p>
+        <p class="credit-name">Edward Prescott</p>
+        <p class="credit-name">Thomas Pynchon</p>
+        <p class="credit-name">Shawn Ryan</p>
+        <p class="credit-name">James C. Scott</p>
+        <p class="credit-name">Paul Simon</p>
+        <p class="credit-name">Elliott Smith</p>
+        <p class="credit-name">Steven Spielberg</p>
+        <p class="credit-name">Sufjan Stevens</p>
+        <p class="credit-name">Jeff Tweedy</p>
+        <p class="credit-name">Tina Weymouth</p>
+        <p class="credit-name">Joss Whedon</p>
+        <p class="credit-role">Villains</p>
+        <p class="credit-name">Nazis</p>
+      </div>
+    </div>
+    <p class="credits-hint">Scroll to speed up</p>
+  </div>
+
+  <footer>
+    270 Bay State Rd, Boston, MA 02215 · <a href="mailto:jczldv@bu.edu">jczldv@bu.edu</a>
+  </footer>
+</div>
+
+<script>
+  function setOpen(card, open) {
+    card.classList.toggle('open', open);
+    var btn = card.querySelector('.abs-toggle');
+    if (btn) {
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? 'Close' : 'Abstract';
+    }
+  }
+  document.querySelectorAll('.abs-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var card = btn.closest('.card');
+      setOpen(card, !card.classList.contains('open'));
+    });
+  });
+  document.querySelectorAll('.card .abstract').forEach(function (panel) {
+    var x = document.createElement('button');
+    x.className = 'x';
+    x.setAttribute('aria-label', 'Close abstract');
+    x.innerHTML = '&times;';
+    panel.appendChild(x);
+    panel.addEventListener('click', function () {
+      setOpen(panel.closest('.card'), false);
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.card.open').forEach(function (card) { setOpen(card, false); });
+    }
+  });
+
+  /* rolling credits: auto-scrolls, seamless loop; manual scroll pauses it */
+  (function () {
+    var vp = document.getElementById('creditsViewport');
+    var roll = document.getElementById('creditsRoll');
+    if (!vp || !roll) return;
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var SPEED = 28;           // px per second
+    var IDLE_RESUME = 2000;   // ms after last user input before rolling resumes
+    var pausedUntil = 0;
+    var visible = true;
+    var pos = 0;
+    var programmatic = false;
+    var last = null;
+
+    function userInput() { pausedUntil = Date.now() + IDLE_RESUME; }
+    ['wheel', 'touchstart', 'pointerdown', 'keydown'].forEach(function (ev) {
+      vp.addEventListener(ev, userInput, { passive: true });
+    });
+    vp.addEventListener('scroll', function () {
+      if (programmatic) { programmatic = false; return; }
+      userInput();
+      pos = vp.scrollTop;   // adopt the user's position
+    }, { passive: true });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting;
+      }).observe(vp);
+    }
+
+    function step(ts) {
+      if (last === null) last = ts;
+      var dt = (ts - last) / 1000;
+      last = ts;
+      var max = vp.scrollHeight - vp.clientHeight;
+      if (visible && Date.now() > pausedUntil && pos < max) {
+        pos = Math.min(pos + SPEED * dt, max);   // roll once, rest at the end
+        programmatic = true;
+        vp.scrollTop = pos;
+      } else {
+        pos = vp.scrollTop;
+      }
+      requestAnimationFrame(step);
+    }
+    if (!reduced) requestAnimationFrame(step);
+  })();
+</script>
+
+</body>
 </html>

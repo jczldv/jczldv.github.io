@@ -1,0 +1,35 @@
+<svg viewBox="-85 0 1100 560" width="95%" style="max-height:720px;" font-family="Charter, Georgia, serif" xmlns="http://www.w3.org/2000/svg">
+<g stroke="#6a6760" stroke-width=".9">
+<line x1="80" y1="50" x2="80" y2="510"/>
+<line x1="80" y1="510" x2="850" y2="510"/>
+<line x1="75" y1="100" x2="80" y2="100"/>
+<line x1="75" y1="175" x2="80" y2="175"/>
+<line x1="75" y1="250" x2="80" y2="250"/>
+<line x1="75" y1="325" x2="80" y2="325"/>
+<line x1="75" y1="400" x2="80" y2="400"/>
+<line x1="75" y1="475" x2="80" y2="475"/>
+<line x1="224" y1="510" x2="224" y2="515"/>
+<line x1="417" y1="510" x2="417" y2="515"/>
+<line x1="609" y1="510" x2="609" y2="515"/>
+<line x1="802" y1="510" x2="802" y2="515"/>
+</g>
+<g font-size="16" fill="#3c3a32" text-anchor="end">
+<text x="68" y="105">8</text>
+<text x="68" y="180">7</text>
+<text x="68" y="255">6</text>
+<text x="68" y="330">5</text>
+<text x="68" y="405">4</text>
+<text x="68" y="480">3</text>
+</g>
+<text x="22" y="280" font-size="18" fill="#3c3a32" text-anchor="middle" transform="rotate(-90 22 280)">Cumulative Output IRF, p.p.</text>
+<g font-size="16" fill="#3c3a32" text-anchor="middle">
+<text x="224" y="532">20</text>
+<text x="417" y="532">40</text>
+<text x="609" y="532">60</text>
+<text x="802" y="532">80</text>
+</g>
+<text x="455" y="558" font-size="18" fill="#3c3a32" text-anchor="middle">Hand-to-Mouth Share, %</text>
+<line x1="131.8" y1="287.5" x2="814.1" y2="287.5" stroke="#8a857a" stroke-width="2.2" stroke-dasharray="8 4" stroke-linecap="round"/>
+<text x="845" y="294" font-size="17" fill="#8a857a" font-weight="700">Acyclical</text>
+<text x="845" y="272" font-size="17" fill="#8a857a" font-style="italic">ζ = 0, ψ = 0</text>
+</svg>
